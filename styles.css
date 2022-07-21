@@ -424,6 +424,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: 'Poppins';
 }
 
@@ -431,26 +432,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 500px;
-    width: 100%;
+    height: 10rem;
+    width: fit-content;
     /* background-color: antiquewhite; */
 }
 
 .product-category-item{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 400px;
-    width: 800px;
-    background-color: grey;
-    border-radius: 10px;
+    background-color: #ff5144;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 4rem 4rem 4rem 4rem;
+    transition: all 1.0s ease;
+    z-index: 2;
     overflow: hidden;
 }
 
-.product-category-item {
-    background-image: url('/Assets/nuddle-GcSQT8UFP7s-unsplash.jpg');
-    background-size: cover;
+.product-category-item:hover {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 15px;
+    z-index: 20;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-shadow: 5px 5px 15px rgba(129, 128, 128 , 0.5);
 }
+
+.product-category-item > img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
 
 /* make the category description centered in the parent div and drop the opacity to 50% */
 .category-description{
@@ -459,17 +472,14 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    transform: scale(0.5);
+    /* transform: scale(0.5); */
     transition: all 0.3s ease;
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.8s ease;
 }
 
 
-.product-category-item:hover {
-    cursor: pointer;
-    transform: translate(0px , -1rem);
-}
+
 
 .category-img-container{
     width: 400px;

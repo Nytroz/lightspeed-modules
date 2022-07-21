@@ -1,0 +1,494 @@
+:root {}
+
+* {
+    box-sizing: borderbox;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-content-container {
+    margin: 2rem 2rem 2rem 2rem;
+    width: 80%;
+    background-color: white;
+    /* height: 500rem; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* ----------  */
+
+.card-module-wrapper1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 2rem;
+    width: 100%;
+    min-height: 350px;
+    border-style: dotted;
+    border-width: 1px 0px 1px 0px;
+    border-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins';
+}
+
+.card-style1 {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+    width: 300px;
+    min-height: 450px;
+
+    /* border-style: solid; */
+    /* border-width: 0px 1px 0px 1px; */
+    border-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    /* overflow: hidden; */
+    transition: all 0.8s ease;
+}
+
+.card-style1:hover { box-shadow: 0px 0px 5px #a1a1a1a0; }
+.card-style1:hover > .details-btn { opacity: 1; height: 4rem; width: 4rem; right: -2rem; box-shadow: 0px 0px 10px rgb(124, 185, 138)}
+.card-style1:hover > .info-container1 > .description-container1 { height: 10rem; overflow: hidden; }
+.card-style1:hover > .img-container1 { height: 200px; }
+.card-style1:hover > .img-container1 > img { transform: translate(0px , -100px);  height: 400px;overflow: hidden; }
+
+.details-btn {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(124, 185, 138);
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    z-index: 20;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+.img-container1 {
+    display: block;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    transition: all 0.8s ease;
+    overflow: hidden;
+}
+
+.img-container1>img {
+    display: block;
+    object-fit: contain;
+    margin-top: 1rem;
+    width: 300px;
+    transition: all 0.8s ease;
+    height: 300px;
+}
+
+.round-btn{
+    border-radius: 50%;
+    background-color: rgba(255, 166, 0, 0.504);
+    width: 2rem;
+    height: 2rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.info-container1 {
+    margin: 1rem;
+    padding: .5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.description-container1 {
+    text-align: left;
+    height: 0rem;
+    overflow: hidden;
+    transition: all 0.8s ease;
+
+}
+
+.ratingbox1{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.pricebox1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4rem 0rem 4rem;
+}
+
+.amountbox1 {
+    margin: 1rem;
+}
+
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    background-color: rgb(124, 185, 138);
+    color: white;
+    padding: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+/* --------- card2 style2 ------------ */
+
+.card-module-wrapper2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 2rem;
+    width: 100%;
+    min-height: 350px;
+    border-style: dotted;
+    border-width: 1px 0px 1px 0px;
+    border-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins';
+}
+
+
+
+.card-style2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+    /* background-color: rgb(234, 234, 234); */
+    min-width: 100px;
+    width: 300px;
+    height: 450px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    z-index: 1;
+    background-color: white;
+    /* overflow: hidden; */
+
+}
+.card-style2 > .img-container2{
+    width: 300px;
+    height: 300px;
+    transition: all 0.4s ease;
+}
+
+.card-style2 > .img-container2 > img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.card-style2:hover {
+    width: 500px;
+    box-shadow: 0px 0px 15px #a1a1a1a0;
+    z-index: 5;
+    flex-direction: column;
+}
+
+.card-style2:hover > .info-container2{
+    position: relative;
+    min-width: 400px;
+    visibility: visible;
+    /* transform: translate(-100px,0px); */
+}
+
+
+
+.info-container2{
+    visibility: collapse;
+    position: relative;
+    margin: 1rem;
+    padding: .5rem;
+    /* background-color: rgb(98, 98, 98); */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    /* border-style: solid; */
+    /* border-width: 1px;
+    border-color: #a1a1a1a0; */
+    background-color: white;
+    /* box-shadow: 0px 0px 15px #a1a1a1a0; */
+    border-radius: 5px;
+    /* width: 10rem; */
+    /* height: 10rem; */
+}
+
+.title-container2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.description-container2{
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+/* ------------ product of the month ------------- */
+
+.featured-product-wrapper{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+.featured-card1{
+    width: 1000px;
+    height: 600px;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-product-container{
+    position: relative;
+    z-index: 4;
+    background-color: white;
+    width: 500px;
+    height: 420px;
+    box-shadow: 5px 5px 15px rgba(129, 128, 128 , 0.5);
+    border-radius: 10px;
+}
+
+.featured-info-container{
+    position: relative;
+    left: -150px;
+    z-index: 1;
+    background-color: aliceblue;
+    width: 800px;
+    max-height: 440px;
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px 0px 0px 200px;
+    /* box-shadow: 0px 0px 5px rgb(124, 185, 138) */
+}
+
+.featured-title{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    line-height: 35px;
+    /* text-align: jutify; */
+}
+
+.featured-title::after{
+    display: block;
+    content: "";
+    background: #ff5144;
+    position: relative;
+    width: 150px;
+    height: 4px;
+    top: -15px;
+}
+
+.featured-price{
+    font-family: 'Montserrat';
+    
+    /* font-size: 40px; */
+    /* line-height; */
+    position: relative;
+    /* width: 100%; */
+    text-align: center;
+    color: #ff5244;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    /* padding: 0rem 5rem 0rem 0rem; */
+}
+
+
+.featured-description {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.featured-btn {
+    margin: 4rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 15px;
+    background-color: #ff5244;
+    margin-left: 15rem;
+    margin-top: 4rem;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0px 0px 5px #ff5144;
+}
+
+.featured-img-container{
+    width: 100%;
+    height: 300px;
+    /* padding: 1rem 1rem 1rem 1rem; */
+    text-align: center;
+    /* border-style: dotted;
+    border-width: 0px 0px 3px 0px;
+    border-color: orange; */
+}
+
+.featured-img-container > img {
+    display:block;
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.featured-img-bar{
+    /* background-color: aliceblue; */
+    width: 100%;
+    height: 80px;
+    /* margin: 1rem; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.tiny-img-box{
+    background-color: rgb(235, 235, 235);
+    width: 3rem;
+    height: 3rem;
+    /* border-style: solid;
+    border-width: 1px 0px 1px 0px; */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.tiny-img-box:hover {
+    width: 4rem;
+    height: 4rem;
+    transform: translate(0px , -1rem);
+}
+
+/* -------------------------------------------------------- */
+
+
+.category-module-wrapper{
+    margin-top: 10rem;
+    /* margin-left: 5rem; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+.category-module-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+.product-category-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+    width: 800px;
+    /* margin: 4rem 0 4rem 0; */
+    background-color: grey;
+    /* box-shadow: 0px 0px 5px rgba(129, 128, 128 , 0.5);    */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-category-item > img {
+    width: 100%;
+    -webkit-mask-image: -webkit-gradient(
+      linear, left bottom, right top, 
+      color-stop(0.00,  rgba(0,0,0,1)),
+      color-stop(0.35,  rgba(0,0,0,1)),
+      color-stop(0.50,  rgba(0,0,0,0.0)),
+      color-stop(0.65,  rgba(0,0,0,0.0)),
+      color-stop(1.00,  rgba(0,0,0,0.0)));
+      /* transition: all 2.8s ease; */
+      /* -webkit-transition: all 2.0s ease; */
+    
+  }
+
+  .product-category-item:hover > img {
+    /* transition: all 0.8s ease; */
+    -webkit-mask-image: -webkit-gradient(
+        linear, left bottom, right top, 
+        color-stop(0.00,  rgba(0,0,0,1)),
+        color-stop(0.35,  rgba(0,0,0,1)),
+        color-stop(0.50,  rgba(0,0,0,1)),
+        color-stop(0.65,  rgba(0,0,0,1)),
+        color-stop(1.00,  rgba(0,0,0,1)));
+        /* transition: all 0.8s ease; */
+
+  }
+
+.category-img-container{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 25px;
+}
+
+.category-description{
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    /* border-style: solid;
+    border-width: 1px 0px 1px 0px; */
+    margin-left: 2rem;
+    /* border-radius: 25px; */
+}
